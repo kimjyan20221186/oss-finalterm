@@ -2,7 +2,7 @@
 ## project title and motivation
 This is explanation of my finalterm project of OpenSW. The project was increasing the accuracy of tumor image(glioma, meningioma, no tumor, pituitary) classification using only sklearn. I tried to use algorithms to improve accuracy with optuna, the hyperparameter tuning framework.
 ## Code development
-I will explain the final submitted file first. I did not touch a given preprocessing process and tried to improve performance by changing only algorithms and hyperparameters. So I imported _KNeighborsClassifier_ and tuned the hyperparameters to improve performance. The parameters I changed in KNeighborsClassifier are **n_neighbors, weights, algorithm, and leaf_size.**
+I will explain the final submitted file first. I did not touch a given preprocessing process and tried to improve performance by changing only algorithms and hyperparameters. So I imported _KNeighborsClassifier_ and tuned the hyperparameters to improve performance. The parameters I changed in KNeighborsClassifier are **n_neighbors(number of closest neighbors), weights(weight function used in prediction), algorithm(used to compute the nearest neighbors), and leaf_size(used for BallTree or KDTree).**
 ## missing but important code
 The combination of these hyperparameters was not obtained manually, but was obtained through the __*optuna*__, A hyperparameter optimization framework, which currently does not have this code in the file.
 
